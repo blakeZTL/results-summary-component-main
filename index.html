@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="Content">
+      <div class="Results">
+        <div class="ResultsTitle">Your Result</div>
+        <div class="ResultCircle">
+          <div class="Scores">
+            <p id="Score">76</p>
+            <p id="PossibleScore">of 100</p>
+          </div>
+        </div>
+        <div class="ScoreSummaryTitle">Great</div>
+        <div class="ScoreSummary">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="Summary">
+        <div class="SummaryTitle">Summary</div>
+        <div class="Breakdowns">
+          <div class="Reaction">
+            <div class="ReactionTitle">
+              <img
+                id="reactionImg"
+                src="assets/images/icon-reaction.svg"
+                alt="reaction"
+              />
+              <span>Reaction</span>
+            </div>
+            <div class="ReactionValue">
+              <span id="ReactionScore">34</span>
+              <span id="ReactionPossibleScore">/100</span>
+            </div>
+          </div>
+          <div class="Memory"></div>
+          <div class="Verbal"></div>
+          <div class="Visual"></div>
+        </div>
+        <div class="Continue">Continue</div>
+      </div>
+      <!-- Feel free to remove this attribution if you'd like. 
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Blake Bradford</a>.        
+      </div>
+      -->
+    </div>
+  </body>
 </html>
