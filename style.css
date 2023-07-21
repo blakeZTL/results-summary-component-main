@@ -7,12 +7,10 @@
 
   .attribution {
     font-size: 11px;
-    text-align: center;    
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
-    width: auto;
+    text-align: center;   
     margin-top: 50px;
+    width: auto;
+    margin: 0, auto;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
@@ -22,8 +20,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 50%;
-    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 15% auto;
     font-family: 'Hanken Grotesk', sans-serif;
     border-radius: 20px;
     box-shadow: 5px 5px 10px hsl(221, 100%, 96%);
